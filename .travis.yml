@@ -6,4 +6,4 @@ before_isntall:
   - docker build -t rkreddy78/docker-react -f Dockerfile.dev .
 
 scripts:
-  - docker run rkreddy78/docker-react npm run test -- --coverage
+  - docker run -e CI=true 68c811e309b6 npm run test
